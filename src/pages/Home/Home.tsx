@@ -4,6 +4,7 @@ import Card from './components/servicesCard';
 import { servicesData } from './data/servicesData';
 import useSelectedServices from './hooks/useSelectedServices';
 
+
 const HomePage: React.FC = () => {
     const { total, updateTotal } = useSelectedServices();
 
@@ -17,11 +18,11 @@ const HomePage: React.FC = () => {
     }
 
     return (
-        <div className="container py-5">
-            <nav className="navbar-light">
+        <div className="container py-2">
+            <nav className="navbar navbar-light sticky-top bg-white">
                 <div className="container-fluid">
                     <a className="navbar-brand text-start fw-bold">
-                    <img src="/src/assets/logo.png" width="35" height="35" alt="Logo" />
+                    <img src="/src/assets/logoBudget.png" width="47" height="45" alt="Logo" />
                         Frontender.itacademy</a>
                 </div>
             </nav>
