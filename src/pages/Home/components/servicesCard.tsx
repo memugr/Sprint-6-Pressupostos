@@ -24,7 +24,9 @@ const Card: FC<CardProps> = ({ service, handleSelection }) => {
                         <p className="card-text text-muted">{service.description}</p>
                     </div>
                     <div className="text-center">
-                        <h5 className="price">{service.price} <span className="currency">€</span></h5>
+                        <h5 className="price-container">
+                            <span className="price">{service.price}</span><span className="currency-card">€</span>
+                        </h5>
                     </div>
                     <div className="text-end d-flex align-items-center gap-2">
                         <input

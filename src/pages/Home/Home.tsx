@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
             <nav className="navbar navbar-light sticky-top bg-white">
                 <div className="container-fluid">
                     <a className="navbar-brand text-start fw-bold">
-                    <img src="/src/assets/logoBudget.png" width="47" height="45" alt="Logo" />
+                        <img src="/src/assets/logoBudget.png" width="47" height="45" alt="Logo" />
                         Frontender.itacademy</a>
                 </div>
             </nav>
@@ -35,8 +35,10 @@ const HomePage: React.FC = () => {
                 ))}
             </div>
             <div className="total-price-container">
-                <h3 className="total-price">
-                    Preu pressupostat: <span className="total-num">{total} <span className="currency">€</span></span>
+                <h3 className="total-price">Preu pressupostat:
+                    <h4 className="total-box">
+                        <span className="total-num">{total}</span><span className="currency-home">€</span>
+                    </h4>
                 </h3>
             </div>
         </div>
